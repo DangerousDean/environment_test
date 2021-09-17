@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\models",
+    "\\spec",
+    "\\spec\\feature",
+    "\\spec\\unit"
+  ],
+  "SelectedNode": "\\spec\\unit\\unit_spec.rb",
+  "PreviewInSolutionExplorer": false
+}

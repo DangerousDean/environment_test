@@ -1,6 +1,3 @@
 Book.create!([
-  {title: "deanbook"},
-  {title: "book2"},
-  {title: "first"},
-  {title: "d"}
+  {title: "deans book lol", author: "deaner duh", price: 127.27, published_date: "2021-09-29"}
 ])

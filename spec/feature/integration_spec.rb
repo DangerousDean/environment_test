@@ -9,7 +9,7 @@ RSpec.describe 'Creating a book', type: :feature do
     fill_in 'Price', with: "12.12"
     fill_in 'Published date', with: "2021-09-29"
     click_on 'Create Book'
-    #visit books_path
+    visit books_path
     expect(page).to have_content('harry potter')
   end
 end
@@ -22,7 +22,7 @@ RSpec.describe 'Creating a book', type: :feature do
     fill_in 'Price', with: "12.12"
     fill_in 'Published date', with: "2021-09-29"
     click_on 'Create Book'
-    #visit books_path
+    find(:xpath, "//tr[td[contains(.,'harry potter')]]/td/a", :text => 'Show').click
     expect(page).to have_content('some guy')
   end
 end
@@ -35,7 +35,7 @@ end
     fill_in 'Price', with: "12.12"
     fill_in 'Published date', with: "2021-09-29"
     click_on 'Create Book'
-    #visit books_path
+    find(:xpath, "//tr[td[contains(.,'harry potter')]]/td/a", :text => 'Show').click
     expect(page).to have_content("12.12")
   end
 end
@@ -48,7 +48,7 @@ end
     fill_in 'Price', with: "12.12"
     fill_in 'Published date', with: "2021-09-29"
     click_on 'Create Book'
-    #visit books_path
+    find(:xpath, "//tr[td[contains(.,'harry potter')]]/td/a", :text => 'Show').click
     expect(page).to have_content("2021-09-29")
   end
 end
